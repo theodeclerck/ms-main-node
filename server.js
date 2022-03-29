@@ -46,16 +46,16 @@ server_http.listen(port, (err) => {
         let config = require(`./config.json`) || {};
 
         console.log(config);
-        MM.init(config, (err, serviceInfo) => {
+        /*MM.init(config, (err, serviceInfo) => {
             if (err) {
                 return console.error(err);
             }
             console.log(serviceInfo);
 
-            /**
+            /!**
              * Our micro-service is now up.
-             * */
+             * *!/
             console.log('#Micro-service UP#');
-        });
+        });*/
     }
 });
